@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainFXController">
+   <children>
+      <Label layoutX="51.0" layoutY="89.0" prefHeight="55.0" prefWidth="162.0" text="Armadura">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <Button fx:id="btnArmadura" mnemonicParsing="false" onAction="#trocaTela" text="Cadastrar" />
+         </graphic>
+      </Label>
+      <Label layoutX="245.0" layoutY="23.0" text="TheCards">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ArmaduraController">
+    <children>
+        <Button fx:id="button" layoutX="88.0" layoutY="505.0" onAction="#Salvar" text="Salvar" />
+      <TextField fx:id="nome" layoutX="32.0" layoutY="110.0" prefHeight="25.0" prefWidth="209.0" />
+      <TextField fx:id="forca" layoutX="65.0" layoutY="180.0" prefHeight="25.0" prefWidth="48.0" />
+      <TextField fx:id="destreza" layoutX="146.0" layoutY="180.0" prefHeight="25.0" prefWidth="48.0" />
+      <Label layoutX="32.0" layoutY="85.0" text="Nome:" />
+      <Label layoutX="66.0" layoutY="153.0" text="Força:" />
+      <Label layoutX="146.0" layoutY="153.0" text="Destreza:" />
+      <TextField fx:id="inteligencia" layoutX="67.0" layoutY="239.0" prefHeight="25.0" prefWidth="48.0" />
+      <TextField fx:id="carisma" layoutX="149.0" layoutY="240.0" prefHeight="25.0" prefWidth="48.0" />
+      <Label layoutX="68.0" layoutY="212.0" text="Inteligencia:" />
+      <Label layoutX="149.0" layoutY="213.0" text="Carisma:" />
+      <TextArea fx:id="descricao" layoutX="31.0" layoutY="395.0" prefHeight="100.0" prefWidth="200.0" />
+      <Label layoutX="30.0" layoutY="361.0" text="Descrição:" />
+      <TextField fx:id="armaduraFis" layoutX="30.0" layoutY="311.0" prefHeight="25.0" prefWidth="85.0" />
+      <Label layoutX="32.0" layoutY="284.0" text="Armadura fisica:" />
+      <TextField fx:id="armaduraMag" layoutX="137.0" layoutY="312.0" prefHeight="25.0" prefWidth="97.0" />
+      <Label layoutX="139.0" layoutY="285.0" text="Armadura mágica:" />
+      <TableView fx:id="tabela" layoutX="261.0" layoutY="83.0" prefHeight="456.0" prefWidth="504.0">
+        <columns>
+          <TableColumn fx:id="tabelaId" prefWidth="25.0" text="ID" />
+          <TableColumn fx:id="tabelaNome" prefWidth="121.0" text="Nome" />
+            <TableColumn fx:id="tabelaForca" prefWidth="40.0" text="For" />
+            <TableColumn fx:id="tabelaInteligencia" prefWidth="40.0" text="Int" />
+            <TableColumn fx:id="tabelaDestreza" prefWidth="40.0" text="Des" />
+            <TableColumn fx:id="tabelaCarisma" prefWidth="40.0" text="Car" />
+            <TableColumn fx:id="tabelaDescricao" prefWidth="197.0" text="Descricao" />
+        </columns>
+      </TableView>
+      <Label layoutX="80.0" layoutY="42.0" text="Cadastro">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="17.0" prefHeight="51.0" prefWidth="176.0" text="Armadura">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
